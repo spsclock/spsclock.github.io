@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
 <title>spsclock</title>
@@ -382,20 +381,18 @@ function startTime() {
 var periodends=[
 08*60+55, //ie 8:55am, in minutes from start of day
 09*60+35, //ie 9:35am, in minutes from start of day
-10*60+15,
+10*60+40,
 10*60+40, //end of short break
-11*60+15,
 11*60+55,
-12*60+35,
-14*60+20, //end of lunch
-14*60+55,
-15*60+35,
+12*60+50,
+14*60+30, //end of lunch
+15*60+20,
 16*60+15,
 ];
 
-var periodnames=["TU","p1","p2","SB","p3","p4","p5","LT","p6","p7","p8"];
+var periodnames=["TU","p1","p2","SB","p3","p4","LT","p5","p6"];
 
-for (i = 10; i >= 0; i--) 
+for (i = 8; i >= 0; i--) 
 {
    if (dayminute<periodends[i]) 
        {period=periodnames[i];
@@ -430,18 +427,6 @@ function checkTime(i) {
     return i;
 }
 
-
-//currently unused
-var periodstarts=[
-9*60+00,
-9*60+40,
-10*60+40,
-11*60+20,
-12*60+00,
-14*60+20,
-15*60+00,
-15*60+40
-];
 
 //]]>
 </script>
