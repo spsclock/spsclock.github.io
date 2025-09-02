@@ -380,9 +380,9 @@ function startTime() {
 
 var periodends=[
 08*60+55, //ie 8:55am, in minutes from start of day
-09*60+35, //ie 9:35am, in minutes from start of day
+09*60+50, //ie 9:50am, in minutes from start of day
 10*60+40,
-10*60+40, //end of short break
+11*60+05, //end of short break
 11*60+55,
 12*60+50,
 14*60+30, //end of lunch
@@ -411,8 +411,8 @@ output = weekdays[weekday]+" "+d+" "+months[month];
 output += "<br> "+h + ":" + m + ":" + s;
 output += " <br>"+period+" left:"+  remaining;
 
-if (remaining<36 && period != "LT" && period != "SB" && period != "TU") {
-elapsed=35-remaining;
+if (remaining<51 && period != "LT" && period != "SB" && period != "TU") {
+elapsed=50-remaining;
 output += "<br>elapsed:"+ elapsed;
 				}
 
