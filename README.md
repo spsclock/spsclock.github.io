@@ -405,7 +405,7 @@ if (h>12) {h-= 12}; //display as 12-hour clock
     m = checkTime(m);
     s = checkTime(s);
 
-if (remaining>35) {remaining='('+remaining+')';}
+if (remaining>50) {remaining='('+remaining+')';}
 
 output = weekdays[weekday]+" "+d+" "+months[month];
 output += "<br> "+h + ":" + m + ":" + s;
