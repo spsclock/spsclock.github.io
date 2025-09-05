@@ -380,7 +380,7 @@ function startTime() {
 
 var periodends=[
 08*60+55, //ie 8:55am, in minutes from start of day
-09*60+50, //ie 9:50am, in minutes from start of day
+09*60+45, //ie 9:50am, in minutes from start of day
 10*60+40,
 11*60+05, //end of short break
 11*60+55,
