@@ -807,7 +807,6 @@ function gameover() {
     // UVT Unified Event
 
     // var event = {};
-    // event.category="Amateur Hacker Simulator - Game Over";
     // event.message="Score " + score;
     // UVT.event.fire(event);
 
@@ -888,7 +887,6 @@ function checkifexists() {
     // UVT Unified Event
 
     // var event = {};
-    // event.category="Amateur Hacker Simulator - Guess";
     // event.message=question;
     // UVT.event.fire(event);
 
@@ -1328,10 +1326,8 @@ function facebook() {
     }
 
     var fbmsg = {};
-    fbmsg.title="Amateur Hacker Simulator";
     fbmsg.message='I guessed ' + score + ' bad password'+pluralise+'. Can you do better?';
     fbmsg.url=window.location.href;
-    fbmsg.picture="http://games.usvsth3m.com/amateur-hacker-simulator/wargames.jpg";
   //  UVT.sharing.facebook(fbmsg);
 
 }
